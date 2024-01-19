@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#chat-container {
+    background: #000;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.matrix-messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+.matrix-message {
+    border-bottom: 1px solid #0f0;
+    padding: 5px;
+    animation: matrix-effect 0.5s infinite;
+}
+
+.matrix-input,
+.matrix-button {
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    border-radius: 3px;
+}
+
+.matrix-button {
+    cursor: pointer;
+}
+
+@keyframes matrix-effect {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
