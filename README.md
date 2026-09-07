@@ -2,31 +2,43 @@
 
 # 🟢 Matrix Chat Python
 
-**Real-time Matrix-inspired web chat experiment by Swir**  
-**Eksperymentalny czat WWW czasu rzeczywistego w stylu Matrix autorstwa Swir**
+### Real-Time Flask + Socket.IO Web Chat with Matrix-Inspired UI
+
+**Python • Flask • Flask-SocketIO • HTML • CSS • JavaScript**
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Backend-Flask-000000?logo=flask)
-![Socket.IO](https://img.shields.io/badge/Realtime-Socket.IO-010101?logo=socketdotio)
-![Author](https://img.shields.io/badge/Author-Swir-00ff66)
+![Flask](https://img.shields.io/badge/Backend-Flask-000000?logo=flask&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Realtime-Socket.IO-010101?logo=socketdotio&logoColor=white)
+![UI](https://img.shields.io/badge/Style-Matrix-00ff66)
 
 </div>
 
 ---
 
-## 🇬🇧 English
+## 🚀 About
 
-Matrix Chat Python is a small real-time web-chat experiment using Flask and Flask-SocketIO on the backend with HTML, CSS and JavaScript on the client side. Connected clients can exchange messages immediately and new connections receive the in-memory message history.
+**Matrix Chat Python** is a lightweight real-time web chat experiment built with Flask and Flask-SocketIO. The frontend uses HTML, CSS and JavaScript with a visual style inspired by Matrix terminals.
 
-### ✨ Features
-- real-time Socket.IO communication
-- Flask backend
-- Matrix-inspired frontend styling
-- broadcast messages to connected users
-- in-memory message history for new clients
-- lightweight project structure
+Connected clients can exchange messages instantly, while new connections receive the current in-memory message history. The project is intentionally compact and easy to understand, making it useful as a starting point for learning real-time Python web communication.
 
-### 🚀 Installation
+It is designed for users searching for a **Flask Socket.IO chat**, **Python real-time chat**, **Matrix style chat**, **Flask web chat source code** or a simple Socket.IO messaging example.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| ⚡ Real-time messaging | Socket.IO communication between clients and server |
+| 🐍 Flask backend | Lightweight Python web server |
+| 🟢 Matrix UI | Terminal-inspired green visual style |
+| 📣 Broadcast | Messages are sent to connected clients |
+| 🧠 Message history | New clients receive history stored in server memory |
+| 🪶 Small project | Simple structure for learning and modification |
+
+---
+
+## 📦 Installation
 
 ```bash
 git clone https://github.com/Swir/Matrix-czat-pythom.git
@@ -35,31 +47,42 @@ pip install flask flask-socketio
 python server.py
 ```
 
+Then open the local server URL in your browser.
+
 ---
 
-## 🇵🇱 Polski
+## 🧠 Architecture
 
-Matrix Chat Python to niewielki eksperymentalny czat WWW działający w czasie rzeczywistym. Backend wykorzystuje Flask i Flask-SocketIO, a frontend HTML, CSS i JavaScript. Wiadomości są rozsyłane do podłączonych klientów, a nowy użytkownik otrzymuje historię przechowywaną w pamięci serwera.
-
-### ✨ Funkcje
-- komunikacja czasu rzeczywistego przez Socket.IO
-- backend Flask
-- wygląd inspirowany Matrixem
-- rozsyłanie wiadomości do podłączonych użytkowników
-- historia wiadomości w pamięci procesu
-- prosta struktura projektu
-
-### 🚀 Instalacja
-
-```bash
-pip install flask flask-socketio
-python server.py
+```text
+Browser A ─┐
+           ├── Socket.IO ──► Flask Server ──► In-memory history
+Browser B ─┘
 ```
 
-## ⚠️ Development note / Uwaga
-The current server starts in debug mode and keeps history only in RAM. Treat it as a development/experimental project rather than a production chat server.
+---
 
-Aktualny serwer uruchamia tryb debug i przechowuje historię tylko w RAM. Projekt należy traktować jako wersję eksperymentalną/deweloperską, a nie gotowy serwer produkcyjny.
+## ⚠️ Development Status
 
-## 👤 Author / Autor
-Developed by **Swir**.
+The current server starts in development/debug mode and stores message history only in RAM. Restarting the process clears that history. Treat this repository as an experimental/development project rather than a production messaging service.
+
+For public deployment, review authentication, persistence, HTTPS, rate limiting, input handling and production server configuration.
+
+---
+
+## 🔍 Discoverability
+
+`flask socketio chat` • `python realtime chat` • `matrix chat python` • `flask web chat` • `socket.io python example` • `realtime messaging flask` • `matrix style web chat` • `python chat source code`
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Swir** — [@Swir](https://github.com/Swir)
+
+<div align="center">
+
+### 🟢 Flask + Socket.IO + Matrix vibes
+
+⭐ **Star the repository if you like the project!**
+
+</div>
